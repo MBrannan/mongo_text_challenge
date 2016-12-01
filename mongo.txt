@@ -41,19 +41,19 @@ orders.insert({ orderDate: "<2015-10-21>", orderTotal: "1.00",  lineItems: [
 
 //Find a single order document, any order document.
 
-orders.find({orderTotal = 3.50});
+orders.find({orderTotal = 3.50})
 
 //Find all orders and make them look pretty.
 
-orders.find({orderTotal = 3.50)}.pretty();
+orders.find({orderTotal = 3.50)}.pretty()
 
 //Find all orders with an orderDate that is prior to 1/1/2016.
 
-orders.find({orderDate: {$lt: new Date('2016-1-1')}});
+orders.find({orderDate: {$lt: new Date('2016-1-1')}})
 
 //Find all orders with an orderDate that is after 1/1/2016.
 
-orders.find({orderDate: {$gt: new Date('2016-1-1')}});
+orders.find({orderDate: {$gt: new Date('2016-1-1')}})
 
 //Find orders with lineItems that have a quantity that is less than 50, but greater than 5. HINT: Look at $and and dot notation.
 
